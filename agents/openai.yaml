@@ -1,0 +1,21 @@
+interface:
+  display_name: "Lexis Legal Research"
+  short_description: "Lexis research workflows for lawyers"
+  default_prompt: "Use $lexis-browseros-legal-research to research this legal issue in Lexis and produce a source-supported memo."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "browseros"
+      description: "Preferred browser automation path for Lexis Legal Research."
+      transport: "streamable_http"
+      url: "http://127.0.0.1:9000/mcp"
+    - type: "mcp"
+      value: "codex-browser"
+      description: "Fallback in-app browser automation for Codex installations."
+    - type: "mcp"
+      value: "playwright"
+      description: "Fallback browser automation with navigation, clicking, typing, snapshots, and screenshots."
+
+policy:
+  allow_implicit_invocation: true
