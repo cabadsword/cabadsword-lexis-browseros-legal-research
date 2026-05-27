@@ -24,6 +24,15 @@ Shepardize by proposition when possible. A case can have negative treatment on o
 6. Search within citing decisions for the proposition terms.
 7. Determine whether any negative treatment affects the exact sentence in the draft.
 
+If browser automation cannot reliably read the case or Shepard's page:
+
+1. Reopen the case by exact citation.
+2. Try the Shepardize path from the opened document or a `shep:` citation search.
+3. Attempt a narrow treatment, headnote, or citing-decision view before full-page extraction.
+4. If the page still times out, use Lexis delivery, export, download, or print for the Shepard's report or narrow treatment view.
+5. Parse the exported report locally for the signal, citing decision, proposition affected, and recommendation.
+6. Record export/download failures only in the working treatment notes or search log.
+
 ## Statute / Rule Treatment
 
 1. Open the current statute or rule.
@@ -48,6 +57,8 @@ Use this format:
 
 | Authority | Shepard's Signal / Treatment | Proposition Checked | Effect On Proposition | Recommendation |
 |---|---|---|---|---|
+
+Keep treatment/status notes in a Shepard/treatment working memo unless the user asks to include them in the authority bank or final memo. Do not place timeout or export-limitation caveats in final attorney work product unless the user expressly requests them.
 
 ## Research Expansion
 
