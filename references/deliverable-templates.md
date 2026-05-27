@@ -14,8 +14,10 @@ Use these templates for consistent legal research work product.
 
 ## Authority Bank
 
-| Issue | Authority | Rule / Holding | Pincite | Treatment | Controlling? | Use In Draft |
-|---|---|---|---|---|---|---|
+| Issue | Authority | Verified Proposition | Pincite / Source Location | Use In Draft |
+|---|---|---|---|---|
+
+Put treatment/status in a separate Shepard/treatment working memo unless the user asks to include it in the authority bank.
 
 ## Shepard's Review
 
@@ -51,6 +53,8 @@ Provide concise language the user can use in the work product.
 **Authorities Reviewed**
 
 Use a pure citation list unless the user asks for treatment notes or an authority bank.
+
+Do not include a "Lexis verification status" section in the attorney memo by default. Put verification status, search logs, timeout notes, export limitations, and rejected authorities in working files unless the user requests them in the memo.
 
 ## Supervising Attorney Litigation Memo
 
@@ -100,6 +104,8 @@ Note whether any document is a draft, nonconformed, incomplete, or not the opera
 
 | Issue | Search / Filter | Sources Opened | Result |
 |---|---|---|---|
+
+Include browser extraction issues, export/download paths, and export limitations here rather than in the final memo.
 
 ## Working Memo - Lexis AI Lead Generation
 
