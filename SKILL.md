@@ -15,11 +15,13 @@ Use this skill for legal research in Lexis through browser automation. The goal 
 - If the client/matter is not visible or specified, ask the user to identify the correct `[client/matter]` before researching.
 - If login, MFA, or credentials are required, pause and ask the user to complete login manually.
 - Never store, request, or commit Lexis credentials, session cookies, or browser profile artifacts.
+- Start with normal browser snapshots and page review. Do not rely on search-result snippets as final authority support.
+- If Lexis case, statute, or Shepard's pages time out or become unstable during full-page extraction, stop trying to scrape the heavy page. Use Lexis delivery, export, download, or print tools as a fallback, then parse the local file.
 - Verify authorities against the specific proposition for which they are cited.
 - Shepardize important primary authorities. When possible, verify treatment at the headnote or proposition level, not merely at the whole-case level.
 - For statutes, rules, and code sections, check the current version/effective date and relevant citing decisions when the point matters.
-- Keep an audit trail: search strings, filters, sources opened, and why authorities were accepted or rejected. Put audit trails, materials reviewed, Lexis AI checks, treatment notes, and rejected authorities in a separate working memo unless the user asks to include them in the final product.
-- Keep final attorney memos clean: include the answer, governing law, application, objective risk assessment, recommendation, and a pure authority list; do not include research-log material unless requested.
+- Keep an audit trail: search strings, filters, sources opened, exports or downloads used, export limitations, and why authorities were accepted or rejected. Put audit trails, materials reviewed, Lexis AI checks, treatment notes, rejected authorities, verification status, and export limitations in separate working files unless the user asks to include them in the final product.
+- Keep final attorney memos clean: include the answer, governing law, application, objective risk assessment, recommendation, and a pure authority list; do not include research-log material, Lexis verification status, timeout notes, export limitations, or rejected authorities unless requested.
 - When facts cut both ways, use a neutral risk assessment rather than pure advocacy. Identify the strongest opposing argument and the best response.
 - Treat trial-court orders as persuasive only. State the specific procedural point they support and do not present them as controlling authority.
 - If the user expressly authorizes Lexis AI or Protege, use it only for lead generation. Open every suggested authority directly in normal Lexis, verify the proposition, Shepardize key primary authority, and cite only the direct source.
