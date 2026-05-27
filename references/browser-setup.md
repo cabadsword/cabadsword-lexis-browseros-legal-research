@@ -61,11 +61,17 @@ Common BrowserOS capabilities include:
 
 ## Lexis Entry
 
-1. Open Lexis in the selected browser tool.
-2. If Lexis opens in Protege or another product, use the product switcher to select Legal Research / Lexis.
-3. Confirm the client or matter shown at the top of the page.
-4. Select the user-specified `[client/matter]`.
-5. If prompted for login or MFA, stop and ask the user to complete login.
+Before substantive research:
+
+1. Confirm the selected browser tool is connected and can see at least one browser page.
+2. Open a fresh Lexis Legal Research tab.
+3. If Lexis opens in Protege, Lexis AI, or another product, use the product switcher to return to Legal Research / Lexis.
+4. Confirm the client or matter shown at the top of the normal Legal Research page.
+5. Select the user-specified `[client/matter]`, using the user-confirmed visible client label when available.
+6. If Lexis redirects to Protege, AI, or a page where the client/matter does not persist, return once to `https://plus.lexis.com/zhome` and repeat the product/client confirmation.
+7. If prompted for login or MFA, stop and ask the user to complete login.
+
+Pause before substantive research if the requested client/matter cannot be confirmed after the retry. Tell the user the exact generic page state visible in Lexis without exposing confidential details in any public artifact.
 
 ## Direct Search URL Pattern
 
@@ -91,6 +97,17 @@ If search results are not usable:
 - Refresh the page.
 - Reconfirm the product is Lexis Legal Research, not Protege.
 - Reconfirm the client/matter.
+- If the client/matter does not persist, return once to `https://plus.lexis.com/zhome` and retry selection from the normal Legal Research page.
 - Open a new page and navigate directly to Lexis.
 - Use a narrower query or direct citation search.
 - Ask the user to resolve login/MFA/session issues.
+
+## Heavy Page / Timeout Fallback
+
+Start with browser snapshots and ordinary page review. If Lexis document pages, case pages, statute pages, or Shepard's pages repeatedly time out during full-page extraction:
+
+1. Stop attempting full DOM extraction of the heavy page.
+2. Use direct citation search to reopen the authority if needed.
+3. Use Lexis delivery, export, download, or print tools to save the authority, Shepard's report, or narrow treatment/citing-decision view.
+4. Parse the local file for the proposition, pincite, and treatment note.
+5. Record any export/download limitation in the working search log, not in the final memo unless the user asks.
