@@ -27,6 +27,13 @@ The skill does not provide Lexis access. Users must have their own Lexis subscri
 7. Keep search logs, treatment notes, rejected authorities, and Lexis AI lead-generation notes in separate working memos by default.
 8. Keep final attorney-facing memos clean and source-supported.
 
+## Recent Workflow Updates
+
+- Browser review remains the first workflow: open Lexis Legal Research, confirm the visible `[client/matter]`, and review authorities directly before relying on them.
+- If heavy Lexis case, statute, or Shepard's pages time out during full-page extraction, use Lexis delivery, export, download, or print as a fallback and parse the local file.
+- Shepard's and treatment review should be tied to the specific proposition being cited, not reported only as whole-case status.
+- Final memos should stay clean. Put verification status, search logs, timeout notes, export limitations, and rejected authorities in separate working files unless the user asks to include them.
+
 ## Guardrails
 
 - Do not use Lexis AI, Protege, or AI-generated Lexis answers unless the user expressly authorizes it.
